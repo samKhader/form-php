@@ -6,16 +6,7 @@
 <?php 
 
 if (isset($_POST['submit'])) {
-	$username = $_POST['username'];
-	$password = $_POST['password'];
-	$id = $_POST['id'];
-
-	$query = "UPDATE users SET ";
-	$query .= "username = '$username' , ";
-	$query .= "password = '$password' ";
-	$query .= "WHERE id = $id ";
-	mysqli_query($connection,$query);
-	
+	update();
 
 }
 
