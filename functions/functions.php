@@ -29,6 +29,15 @@ function update(){
 
 }
 
+function delete(){
+	global $connection;
+	$id = $_POST['id'];
+	$query = "DELETE FROM users ";
+	$query .= "WHERE id = $id ";
+	mysqli_query($connection,$query);
+	
+
+}
 
 
 
